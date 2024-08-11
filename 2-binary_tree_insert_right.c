@@ -25,9 +25,9 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 	new_node->right = parent->right;
 	new_node->left = NULL;
 
-/* If the parent already has a right child,
-set it as the right child of the new node */
-	if (parent->right != NULL) 
+/* If the parent already has a right child,*/
+/* set it as the right child of the new node */
+	if (parent->right != NULL)
 		parent->right->parent = new_node;
 
 	/* attach the new node as the right child of the parent.*/
